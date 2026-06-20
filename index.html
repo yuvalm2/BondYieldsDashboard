@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>תשואות אג"ח ממשלתיות - מדינות מרכזיות וישראל</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <h1>תשואות אג"ח ממשלתיות</h1>
+      <p class="subtitle">מדינות מרכזיות בעולם וישראל - ריבית (תשואה) לכל תקופה (מח"מ)</p>
+      <p class="subtitle subtitle-note">כל הריביות מוצגות כתשואה שנתית (אנצואלית) - גם עבור תקופות קצרות משנה</p>
+    </header>
+
+    <main>
+      <div class="table-wrapper">
+        <table id="bonds-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="legend">
+        <span class="legend-label">תשואה נמוכה</span>
+        <span class="legend-gradient"></span>
+        <span class="legend-label">תשואה גבוהה</span>
+      </div>
+
+      <p class="hint">
+        לחיצה על כותרת עמודה ממיינת את הטבלה לפיה.
+        לחיצה על ערך תשואה פותחת בכרטיסייה חדשה את מקור הנתונים העדכני לאותה מדינה.
+      </p>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        * נתוני דמו להמחשה (לא נתונים חיים), נכון ל-<span id="as-of"></span>.
+        לעדכון הנתונים יש לערוך את הקובץ <code>js/data.js</code>.
+        הקישורים בטבלה מובילים למקורות עדכניים בזמן אמת, ולכן הערכים שיוצגו בהם
+        עשויים להיות שונים מהנתונים שבטבלה.
+      </p>
+      <p>
+        * עבור ישראל: התשואות לתקופות של עד שנה (3 חודשים, 1 שנה) משקפות מק"מ של בנק ישראל,
+        ולתקופות הארוכות יותר - עקום התשואות של אג"ח ממשלתי. שני המקורות מאוחדים
+        בעמוד "תשואות לפדיון" של בנק ישראל.
+      </p>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

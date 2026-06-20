@@ -1,0 +1,6 @@
+# Keep non-site files out of the nginx web root / build context.
+.git
+.gitignore
+.dockerignore
+Dockerfile
+README.md
