@@ -151,6 +151,40 @@ tbody td.country-col {
   text-align: center;
 }
 
+.load-status {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-inline-start: 4px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  vertical-align: middle;
+  letter-spacing: 0.2px;
+}
+
+.status-badge.live {
+  background: #d9f0e1;
+  color: #1f7a3d;
+}
+
+.status-badge.demo {
+  background: #e9edf2;
+  color: var(--muted);
+}
+
+.status-legend {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 .legend {
   display: flex;
   align-items: center;
@@ -166,7 +200,7 @@ tbody td.country-col {
   width: 140px;
   height: 10px;
   border-radius: 5px;
-  background: linear-gradient(to left, hsl(140, 65%, 88%), hsl(70, 65%, 88%), hsl(0, 65%, 88%));
+  background: linear-gradient(to left, hsl(0, 65%, 88%), hsl(70, 65%, 88%), hsl(140, 65%, 88%));
   border: 1px solid var(--border);
 }
 
